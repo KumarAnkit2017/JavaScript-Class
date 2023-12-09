@@ -1,0 +1,26 @@
+##Question 1.
+
+let a=34;
+let b=a++ + a-- + (a-- + ++a)
+Find the value of a and b
+
+##Question 2.
+What is identifier(Write in your own words) ?
+
+##Question 3.
+Why do we use operator ?
+
+##Question 4.
+Find out the binary of 8,9,102,98
+
+##Question 5.
+let a=10;
+then what is the value of console.log(a+=20)
+
+##Question 6.
+Create 4 container inside a single container. Each container having content like Red,Blue,Green,Yellow.
+When we hover on their div container, color will be change their name accordingly.
+
+
+
+

@@ -18,8 +18,16 @@ let a=10;
 then what is the value of console.log(a+=20)
 
 ##Question 6.
-Create 4 container inside a single container. Each container having content like Red,Blue,Green,Yellow.
-When we hover on their div container, color will be change their name accordingly.
+Create 4 container inside a single container. Each container having content like Red,Blue,
+Green,Yellow.When we hover on their div container, color will be change their name accordingly.
+
+
+##Question 7.
+Bit Wise operator
+let b=43;
+let c=20;
+find out the console.log(b&c)
+find out the console.log(b|c)
 
 
 

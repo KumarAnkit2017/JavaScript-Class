@@ -1,0 +1,18 @@
+## Question 1.
+Create clone nav-bar like amazone.com
+
+## Question 2.
+Create an input filled and button , when we write any input string 
+inside the text field, string will be shown into alert.
+
+## Question 3.
+Create an attractive marks calualation App, having following fileds.
+1.Math -input filed with proper place holder
+2.Science -input filed with proper place holder 
+3.Compuer -input filed with proper place holder
+4.History -input filed with proper place holder
+then, create a button to calculate the total marks and the total percentage which
+will shown inside the input box.
+
+## Question 4.
+Write a program to check the number is positive or negative.

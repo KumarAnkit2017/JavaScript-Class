@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day4-try catch finaly,Loop,Break,Continue</title>
+  </head>
+  <script>
+    debugger;
+    function divideNumbers(a, b) {
+      try {
+        if (b === 0) {
+          throw new Error("Division by zero is not allowed");
+        }
+        return a / b;
+      } catch (error) {
+        console.error("An error occurred:", error.message);
+       
+      }
+    }
+
+    // Example usage:
+    console.log(divideNumbers(10, 2)); // Output: 5
+    console.log(divideNumbers(5, 0)); // Output: An error occurred: Division by zero is not allowed
+    console.log(divideNumbers(8, 4)); // Output: 2
+
+    //message();
+  </script>
+  <body></body>
+</html>

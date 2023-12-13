@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Day4-try catch finaly,Loop,Break,Continue</title>
+    <title>Day4-try catch finaly</title>
   </head>
   <script>
     debugger;
@@ -24,7 +24,28 @@
     console.log(divideNumbers(5, 0)); // Output: An error occurred: Division by zero is not allowed
     console.log(divideNumbers(8, 4)); // Output: 2
 
+
+    function checkValidation()
+    {
+      debugger;
+      try{
+        let name=document.getElementById("inp").value;
+        if(name*1===Number(name))
+        {
+          throw new Error("You have Entere Number Instead Of String")
+        }
+      }catch(errro)
+      {
+        alert(errro)
+      }
+      
+
+    }
+
     //message();
   </script>
-  <body></body>
+  <body>
+    <input type="text" id="inp"/>
+    <input type="button" value="click-me" onclick="checkValidation()"/>
+  </body>
 </html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day5-For Loop,Array,Object</title>
+    <script>
+              //1. for loop
+              //2 X 1=2
+              function countNumber()
+              {
+                  let count=0;
+                  for(let start=1;start<=100;start++)
+                  {
+                      count++;
+                      console.log(start);
+                  }
+                  //alert(count)
+
+              }
+              countNumber();
+
+
+            //let a=prompt("Enter number");//
+            let a=6;
+            for (let b=1 ; b<=10;b++)
+            {
+            //let c = a*b;
+            //console.log(a +"X"+ b +"="+ c);
+            //console.log(a + "x"+ b +"="+(c= a*b));
+            console.log(a +"X"+ b +"="+a*b);
+            }
+
+            
+            //Array
+            let num=10;
+            let name="Ankit";
+            //let student_name=["Ankit","Aishu","Shubhi","Rajeev","Kirti"];
+            let num1=[1,2,3,4,5];
+
+             //alert(student_name[2]);
+           // alert(student_name);
+            //student_name=["Ankit","Aishu","Shubhi"];
+            for(let st=0;st<num1.length;st++)
+            {
+                debugger;
+                //alert(num1[st]);
+            }
+
+
+
+            ///Object-Eaxpmle 1
+            let student={
+                name:"Ankit",
+                roll:5
+            };
+
+            ///Object-Eaxpmle 2
+            let animalArray=[
+                {
+                    name:"Dog",
+                    leg:4,
+            },{
+                name:"Lion",
+                    leg:4,
+            },{
+                name:"Cat",
+                    leg:4,
+            },{
+                name:"Peacock",
+                    leg:2,
+            }];
+
+            alert(animalArray[2].leg+" : "+animalArray[2].name);
+
+            for(let i=0;i<animalArray.length;i++)
+            {
+                alert(animalArray[i].leg+" : "+animalArray[i].name);
+
+            }
+
+
+
+
+            
+
+            //alert("Roll"+student.roll+"and name is "+student.name); "Roll 1 and name is Ankit"
+
+            let animal={
+                noOfLeg:4,
+                animalName:"Lion"
+            }
+
+            //alert(animal.noOfLeg);
+
+
+            //alert(student_name[2]);
+           // alert(student_name);
+            //student_name=["Ankit","Aishu","Shubhi"];
+            for(let st=0;st<num1.length;st++)
+            {
+                debugger;
+                //alert(num1[st]);
+            }
+            
+
+
+
+
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,22 @@
+## Print star pattern
+
+#*************#
+*             *
+*             *
+*             *
+*             *
+*             *
+#*************#
+
+## Write a javascript program to print fibonaci series and input must be taken thought promt()
+
+## Write a javascript program to get factorial of nth number  and input must be taken thought promt()
+
+## Write a JavaScript Program to Swap Two Variables using third variable
+
+## Write a JavaScript Program to Swap Two Variables without using third variable
+
+## Write a javascript program to add only odd index value of an Array
+eg: [10,34,76,98,89,3,7,9]
+then add only odd indexes value like : 10+76+89+7=182
+

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day8-IterableAndIterator</title>
+    <script>
+        
+        let num=[5,6,7,8,9];
+        //Iterable - it is variable which contains of array of any datatypes(Number or String or Object)
+        //eg: let rollNumber=[3,6,4,2,7,9],let student={name:"Ankit",,,,,,}
+        //Iterable ek variable hai jo object ko contain karta hai and es iterable object se value
+        //nikalne ke liye hum iterator ka use karte hai or iterator value ko nikalne ke liye next() ko use kart hai
+
+        let myIterable=num[Symbol.iterator]();
+        console.log(myIterable.next());
+        console.log(myIterable.next());
+        console.log(myIterable.next());
+        console.log(myIterable.next());
+        console.log(myIterable.next());
+        console.log(myIterable.next());
+
+        
+        let rollArray=[1,2,3,4,5,6,7,8,9]; ///My Custom Iterable
+
+        //Pending 
+        function myIterable(array)
+        {
+
+        }
+
+       
+
+
+
+
+
+
+
+        
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

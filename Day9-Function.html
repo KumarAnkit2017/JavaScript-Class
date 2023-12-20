@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    <script>
+        //1.Normal Function
+        //2.Expression Function
+        //3.Arrow base function
+
+        //1. Normal Function
+        //Syntax- function keyword and name
+        //eg:
+       /* function sum(a,b,c){return  a+b+c ;}
+
+        let num=2+sum(3,6,9);
+        //alert(num);
+
+        function message(mess)
+        {
+            return mess+"Ankit";
+        }
+
+        let returnMessage= message("Hii")
+        alert(returnMessage); */
+
+
+
+        //2. Expression Function
+        //Syntax- function keyword only without name
+        //eg:
+       /* let myFunction= function(a,b,c){return a+b+c;}
+
+        alert(myFunction(3,5,7));
+
+        let myMessage=function(mess){ return mess+"Ankit"}
+
+        alert(myMessage("Hii"));*/
+
+
+        //3. Arrow base Function
+        //Syntax- without function keyword and name //()=>{}
+        //eg:
+
+        let myFunction= (a,b,c)=> {return a+b+c;}
+
+        alert(myFunction(3,5,7));
+
+        let myMessage=(mess)=>{ return mess+"Ankit"}  
+
+        alert(myMessage("Hii"));
+
+
+        function factorial(fact)
+        {
+            
+            let facto=1;
+            for(let i=1;i<=fact;i++)
+            {
+                facto=facto*i;
+            }
+            return facto;
+        }
+
+       alert(factorial(5));
+
+            
+       
+        
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

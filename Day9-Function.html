@@ -85,11 +85,11 @@
 
         //1.setTimeout(function, 10000); 1 Second=1000 millisecond
 
-        setTimeout(
+        /*setTimeout(
             function shoMessage()
             {
                 alert("Hiiii, After few second Second")
-            },1000);
+            },10000);
 
 
             for(let i=0;i<5000;i++)
@@ -100,9 +100,29 @@
             for(let i=0;i<5000;i++)
             {
                 console.log(i);
-            } 
+            } */
 
 
+           
+            let stopSetTimeOutFunction= setTimeout(
+            function shoMessage()
+            {
+                
+            },10000);
+
+
+
+            //2.clearTimeout(value);
+            clearTimeout(stopSetTimeOutFunction);
+            
+
+
+            //3.setInterval(function,miliisecond)
+            setInterval(
+                function shoMessage()
+            {
+                alert("Hiiii, After few second Second")
+            }, 2000);
             
             
 
@@ -110,12 +130,16 @@
 
          
 
-
+            let myStop;
     
 
     </script>
 </head>
 <body>
+
+    <input type="button" onclick="myStop=setTimeout(function(){ console.log(new Date().getUTCDate()); alert('Kumar')},5000)" value="Click Me to Show Alert"/>
+
+    <input type="button" onclick="clearTimeout(myStop)" value="Click Me to Stop the Alert"/>
     
 </body>
 </html>

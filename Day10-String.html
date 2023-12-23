@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+    <script>
+        let name="Ankit"; ///normal way
+        let nameObject=new String("Ankit");///Using new Key word(Constructor)
+        let nameObject1=new String("Ankit");///Using new Key word(Constructor)
+
+        //alert(name==nameObject)// s-t ,s-t
+        //alert(name===nameObject)//s-f,
+        //alert(nameObject1==nameObject)//s-f
+        //alert(nameObject1===nameObject)//s-f
+
+        ///String function
+        //concat(),trim(),length(),touppercase(),to lowercase(),indexOf(),replace(),split()
+
+        //1.concate()
+
+        let str1="Ankit";
+        let str2="Kumar";
+        //alert(str1+str2);
+        //alert(str1.concat(str2));
+
+        //2.trim();
+        let str="       Ankit     Kumar    ";
+       //alert(str.trimLeft());
+        //alert(str.trimRight());
+        //alert(str.trim());
+
+
+        //3.length()
+        //alert(str1.length);
+        //alert(str.length);
+
+        //4.touppercase()
+        //alert(str1.toUpperCase())
+        //alert(str1)
+
+        //5.toLowercase()
+        let str3="Ankita";
+        //alert(str3.toUpperCase())
+        //alert(str3.toLowerCase());
+
+        //5.toLowercase()
+        let str4="Ankita";
+        //alert(str4.indexOf("t"));///  index value=4
+       // alert(str4.indexOf("s"));/// when the character is not exist in the string then it always return -1(negative value)
+
+       //6.replace()
+       let str5="Ankit Kumar";
+      //alert(str5.replace("Kumar","Singh"));
+       //alert(str5.replace("Kumar","Raj"));
+
+       //7.split()
+       let str6="Kumar Ankit Raj"
+       //Kumar-0
+       //Ankit-1
+       let breakName=str6.split(" ") ////Kumar-0,//Ankit-1 let strgArray=["Kumar","Ankit","Raj"]
+      // breakName=["Kumar","Ankit","Raj"]
+       //alert(breakName);
+       //alert(breakName[2]);
+       //alert(breakName[1]);
+
+       for(i of breakName)
+       {
+        alert(i);
+       }
+
+       for(i in breakName)
+       {
+        alert(breakName[i]);
+       }
+
+       
+
+
+       
+
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <script>
+
+        ////1.onclick();
+        ////2.onchange();
+        ////3.onblur();
+        ////4.onmouseover();
+        ////5.onmouseenter();
+
+        function onMouseEvent() /// whenever mouse will move over the screen this event will be occurs
+        {
+            console.log("Mouse is still moving");
+        }
+
+        function onClickEvent() ///// whenever click on event or action will perform
+        {
+            alert("Clicked Me");
+        }
+
+        function onblurEvent()
+        {
+            alert("onblur is triggere");
+        }
+
+
+        function onChangeEvent()
+        {
+            alert("Now Value will be changed");
+        }
+
+        function onKeyPressEvent()
+        {
+            //alert("Key has been Pressed");
+            console.log("Key has been Pressed");
+        }
+
+        function onKeyUpEvent()
+        {
+            console.log("Key has been Released");
+        }
+
+        function copythetext()
+        {
+            let myVal= document.getElementById("input-field").value;
+            document.getElementById("inputi-field2").value=myVal;
+        }
+
+    </script>
+
+</head>
+<body style="background-color: red;" onmouseover="onMouseEvent()">
+
+<input type="button" onclick="onClickEvent()">
+
+        
+<input type="text"  onblur="onblurEvent()" value="1"/>
+<input type="text"  value="2"/>
+<input type="text"  onblur="onblurEvent()" value="3"/>
+<input type="text"  value="4"/>
+<input type="text"  onblur="onblurEvent()" value="5"/>
+
+<input type="text" onkeypress="onKeyPressEvent()"  />
+<input type="text" onkeyup="onKeyUpEvent()"   />
+
+
+<select onchange="onChangeEvent()">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+
+</select>
+
+<input type="text" onkeyup="copythetext()" id="input-field" placeholder="Enter you text" />
+<input type="text"  id="inputi-field2"  placeholder="Copy the text"/>
+
+
+
+    
+</body>
+</html>

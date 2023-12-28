@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <script>
+        function myFun()
+        {
+            //Id
+            //alert(document.getElementById("input-id").value);
+            //alert(document.getElementById("input-id").id);
+            //alert(document.getElementById("input-id").text);
+
+            //ClassName
+            //debugger;
+            //alert(document.getElementsByClassName("input-class")[1].value);
+            //alert(document.getElementsByClassName("input-id")[2].id);
+            //alert(document.getElementsByClassName("input-id")[2].text);
+
+            //TagName
+            //debugger;
+            alert(document.getElementsByTagName("input")[3].value);
+            //alert(document.getElementsByClassName("input-id")[2].id);
+            //alert(document.getElementsByClassName("input-id")[2].text);
+        }
+        
+    </script>
+</head>
+<body>
+   <!--- <input type="text" id="input-id" onchange="myFun()"  />!-->
+    <input type="text" class="input-class" onclick="myFun()" />0
+    <input type="text" class="input-class" onclick="myFun()" />1
+    <input type="text" class="input-class" onclick="myFun()"  />2
+    <input type="text" class="input-class" onclick="myFun()"  />3 /// passs
+    <input type="text" class="input-class" onclick="myFun()" />4 /// passs
+    <input type="text" class="input-class" onclick="myFun()" />5
+    <input type="text" name="input-name" onclick="myFun()"/>
+    <input type="text"  onclick="myFun()"/>
+    
+</body>
+</html>

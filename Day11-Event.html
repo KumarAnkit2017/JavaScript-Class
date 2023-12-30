@@ -50,37 +50,30 @@
             document.getElementById("inputi-field2").value=myVal;
         }
 
+        ////onload()
+        function imageIsLoaded()
+        {
+            alert("Image has been loaded");
+        }
+
+        ////onfocus()
+        function elementIsSelected()
+        {
+            alert("Now Your Focus on Input Elemet");
+        }
+
+
+
+
+
     </script>
 
 </head>
-<body style="background-color: red;" onmouseover="onMouseEvent()">
+<body  onmouseover="onMouseEvent()">
 
-<input type="button" onclick="onClickEvent()">
+    <input type="text" onfocus="elementIsSelected()"/>
 
-        
-<input type="text"  onblur="onblurEvent()" value="1"/>
-<input type="text"  value="2"/>
-<input type="text"  onblur="onblurEvent()" value="3"/>
-<input type="text"  value="4"/>
-<input type="text"  onblur="onblurEvent()" value="5"/>
-
-<input type="text" onkeypress="onKeyPressEvent()"  />
-<input type="text" onkeyup="onKeyUpEvent()"   />
-
-
-<select onchange="onChangeEvent()">
-    <option>1</option>
-    <option>2</option>
-    <option>3</option>
-    <option>4</option>
-
-</select>
-
-<input type="text" onkeyup="copythetext()" id="input-field" placeholder="Enter you text" />
-<input type="text"  id="inputi-field2"  placeholder="Copy the text"/>
-
-
-
-    
+    <input type="text" />
+  
 </body>
 </html>

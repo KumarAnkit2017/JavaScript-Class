@@ -11,13 +11,45 @@
         arr.push(5555);
 
         console.log(arr);
+ 
+
+        ///Recursion 
+        
+        function callRecursion(num) //5
+        {
+            num++;  //5
+            
+            if(num<6)  //6
+            {
+                
+                callRecursion(num);  //5
+                debugger;
+                console.log(num);
+
+            }
+            
+           alert(num);
+        }
+
+        //callRecursion(0);
+
+     let num="";//empty
+        //let convertIntoNumber=Number(num);  ///null-0.......infinete  null
+        console.log(num); //0
+        console.log(typeof num);  //number;
+
+
 
         
+        
+
 
 
     </script>
 </head>
-<body>
+<body onload="createAnchor()">
+
+
     
 </body>
 </html>

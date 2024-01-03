@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack And Heap Memory Concept</title>
+
+    <script>
+
+        ///stack memory ----Premitive data type
+        let name="ankit";
+        let newVar=name;
+        newVar="Aishu";
+        //alert("new Var " +newVar);
+        //alert("name " +name);
+
+
+
+
+        ///heap memory-----non premitive data type
+        let student={
+            name:"Ankit"
+        }
+
+        let newStudent=student;
+        newStudent.name="Aishu";
+
+        alert(newStudent.name="Aishu")
+        alert(student.name);
+
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

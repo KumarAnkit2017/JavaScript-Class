@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script>
+
+        function createTextTag()
+        {
+           return document.createTextNode("Shubhi");
+        }
+
+        function createAnchorTag()
+        {
+         let createNewAnchorElemnt= document.createElement("a"); ////1. create new anchor tag  <a></a>
+         let createPTags=document.createElement("p");
+         createNewAnchorElemnt.setAttribute("href","https://google.co.in"); ///<a href="hhtps:///....."></a>
+          let createNewTextForAnchorTag= createTextTag(); /// it helps to create any text
+         createNewAnchorElemnt.appendChild(createNewTextForAnchorTag); //<a href="gooobhjghj">clicke me</a>
+         createPTags.appendChild(createNewTextForAnchorTag);
+         document.body.appendChild(createNewAnchorElemnt);
+         document.body.appendChild(createPTags);
+        }
+    </script>
+</head>
+<body onload="createAnchorTag()">
+
+</body>
+</html>

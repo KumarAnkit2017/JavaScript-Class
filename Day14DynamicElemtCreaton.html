@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
     <script>
-
-        function createTextTag()
+      /* function createTextTag()
         {
            return document.createTextNode("Shubhi");
         }
@@ -21,10 +20,108 @@
          createPTags.appendChild(createNewTextForAnchorTag);
          document.body.appendChild(createNewAnchorElemnt);
          document.body.appendChild(createPTags);
-        }
-    </script>
-</head>
-<body onload="createAnchorTag()">
+        } */
 
-</body>
+      /*function createNewButtons()
+        {
+            let createNewButton=document.createElement("input");
+            createNewButton.setAttribute("type", "button");
+            createNewButton.setAttribute("value","Click me");
+            document.body.removeChild(createNewButton);
+        }*/
+
+      /* function createH1Tag()
+        {
+            let createNewH1=document.createElement("h1");
+            let createNewText=document.createTextNode("Hello World");
+            createNewH1.appendChild(createNewText);
+            document.body.appendChild(createNewH1);
+        }*/
+
+      function showAlert() {
+        //alert(document.getElementById("my-p").innerHTML);
+        // alert(document.getElementById("my-p").outerHTML);
+        //alert(document.getElementById("my-p").innerHTML="Raj");
+        debugger;
+        //let getParentObj = document.getElementById("myDiv").children[2];
+        //alert(getParentObj.textContent);
+        alert(document.getElementsByTagName("table")[0].children[1].childElementCount);
+      }
+    </script>
+  </head>
+  <body onload="showAlert()">
+    <!--<input type="button" value="Clicke me" />-->
+
+    <p id="my-p">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam veniam
+      dicta, ad doloribus laboriosam harum illum numquam dolores quas? Eum quis
+      placeat reprehenderit fugiat, natus earum beatae nemo esse quos.
+    </p>
+
+    <div id="myDiv">
+      <h1>Aishu</h1>
+      <h1>Shubhi</h1>
+      <h1>Kirti</h1>
+      <h1>Purvi</h1>
+    </div>
+
+    <table border="2">
+      <thead>
+        <tr>
+          <td>Name</td>
+          <td>Age</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Name</td>
+          <td>Age</td>
+        </tr>
+        <tr>
+          <td>Aishu</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Shubhi</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Shubhi</td>
+          <td>0</td>
+        </tr>
+        <tr>
+            <td>Shubhi</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td>Shubhi</td>
+            <td>0</td>
+          </tr>
+
+          <tr>
+            <td>Shubhi</td>
+            <td>0</td>
+          </tr><tr>
+            <td>Shubhi</td>
+            <td>0</td>
+          </tr>
+
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Shubhi</td>
+          <td>0</td>
+        </tr>
+      </tfoot>
+    </table>
+
+
+    <input type="button" onclick="openNewPage()" value="Open Google">
+  </body>
+  <script>
+    function openNewPage()
+    {
+        window.open("https://google.co.in",null);
+    }
+  </script>
 </html>

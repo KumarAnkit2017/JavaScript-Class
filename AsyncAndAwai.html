@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+     async function fetchDataFromServer()
+      {
+         await fetch("https://dummyjson.com/products").then(response=>response.json()).then(data=>console.log(data))
+         alert("alert");
+      }
+
+
+      let obj={
+        "id": 343791,
+        "invoicedate": "2017-05-08",
+        "portfolioid": "S3KL1PTC0551",
+        "deliverydate": "2017-05-09",
+        "totalbuyqty": 0.00,
+        "totalsellqty": 0.00,
+        "totalbuyprice": 0.00,
+        "totalsellprice": 0.00,
+        "totaliex": 0.00,
+        "ptccharge": 0.00,
+        "servicetax": 0.00,
+        "grandtotal": 0.00,
+        "createdby": "PIYUSH",
+        "createdon": "2017-07-02T10:33:00.000+00:00",
+        "previosbalance": 0.00,
+        "paidamounttoptc": 3000000.00,
+        "deduction": 0.00,
+        "balance": 3000000.00,
+        "reject": false,
+        "approve": true,
+        "otherdeduction": 0.00,
+        "netbalance": 3000000.00,
+        "remarks": null,
+        "credit": false,
+        "agreementType": "Buy",
+        "surchargeAmount": null,
+        "servicetaxpercent": null,
+        "gst": false,
+        "commercial_reject": false,
+        "tax": null,
+        "taxpercent": null,
+        "invoicetype": "Buy",
+        "updatedby": null,
+        "updatedon": null,
+        "billingstartdate": "2017-05-09",
+        "billingenddate": "2017-05-15",
+        "billingdate": "2017-05-15",
+        "agreementsnapshotid": 0,
+        "exchange": "IEX",
+        "billingcycle": "",
+        "tamdeduction": 0.00,
+        "rtmdeduction": 0.00,
+        "gtamdeduction": 0.00,
+        "gdamdeduction": 0.00,
+        "pxildeduction": 0.00
+    }
+      
+    </script>
+</head>
+<body onload="fetchDataFromServer()">
+    
+</body>
+</html>

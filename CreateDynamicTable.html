@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Table and add row dynamicaly</title>
+    <style>
+        table
+        {
+            text-align: center;
+        }
+
+        thead
+        {
+            background-color: brown;
+            color: white;
+        }
+
+        tbody tr{
+            background-color: beige;
+        }
+
+        input[type="text"]
+        {
+            border-radius: 10px;
+        }
+
+
+        
+    </style>
+    <script>
+        function addNewRow()
+        {
+            
+            debugger;
+            let countTotalRow=document.body.children[0].children[0].children[1].childElementCount;
+            if(countTotalRow==0)
+            {
+                addNew();
+            }else if(countTotalRow>0)
+            {
+                let stName=document.body.children[0].children[0].children[1].children[countTotalRow-1].children[0].children[0].value;
+                let stContact=document.body.children[0].children[0].children[1].children[countTotalRow-1].children[1].children[0].value;
+                let stEmail=document.body.children[0].children[0].children[1].children[countTotalRow-1].children[2].children[0].value;
+                let stAddress=document.body.children[0].children[0].children[1].children[countTotalRow-1].children[3].children[0].value;
+
+                if(stName=='' || stContact=='' || stEmail=='' || stAddress=='')
+                {
+                    alert("You can not create empty records")
+                }
+                else
+                {
+                    addNew();
+                }
+            }
+            
+
+        }
+
+        function addNew()
+        {
+            let createNewTr=document.createElement("tr");
+
+            let createNameInput=document.createElement("input");
+            createNameInput.setAttribute("type","text");
+            createNameInput.setAttribute("id","st_name");
+            let createNameTd=document.createElement("td");
+            createNameTd.appendChild(createNameInput);
+
+            let createNameContact=document.createElement("input");
+            createNameContact.setAttribute("type","text");
+            createNameContact.setAttribute("id","st_contact");
+            let createNameContactsTd=document.createElement("td");
+            createNameContactsTd.appendChild(createNameContact);
+
+            let createNameEmail=document.createElement("input");
+            createNameEmail.setAttribute("type","text");
+            createNameEmail.setAttribute("id","st_Email");
+            let createNameEmailsTd=document.createElement("td");
+            createNameEmailsTd.appendChild(createNameEmail);
+
+            let createNameAddress=document.createElement("input");
+            createNameAddress.setAttribute("type","text");
+            createNameAddress.setAttribute("id","st_Address");
+            let createNameAddressTd=document.createElement("td");
+            createNameAddressTd.appendChild(createNameAddress);
+
+            createNewTr.appendChild(createNameTd);
+            createNewTr.appendChild(createNameContactsTd);
+            createNewTr.appendChild(createNameEmailsTd);
+            createNewTr.appendChild(createNameAddressTd);
+
+            document.body.children[0].children[0].children[1].appendChild(createNewTr)
+        }
+    </script>
+</head>
+<body>
+    <center>
+        <table border="2" width="80%">
+            <thead>
+                <tr>
+                    <td>Name</td> 
+                    <td>Contact</td>1
+                    <td>Email</td>
+                    <td>Address</td>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+
+        <input type="button" class="btn" value="Add" onclick="addNewRow()"/>
+        
+    </center>
+</body>
+</html>

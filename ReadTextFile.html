@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Read Text File From the System</title>
+</head>
+<script>
+    let allTextDat;
+    function readTextFile()
+    {
+        debugger;
+       let file= document.getElementById("fileInput").files[0];
+       if(file)
+       {
+        let referenceVariable= new FileReader();
+        referenceVariable.onload=function(fileTextObject)
+        {
+            allTextDat= fileTextObject.target.result;
+            alert(allTextDat);
+        };
+        referenceVariable.readAsText(file);
+
+       }
+       else{
+        alert("please Chose File To Read Anmy Text");
+       }
+       
+
+    }
+
+    username:Ankit
+    password:12345
+
+    allTextDat.split(":")
+
+
+function login()
+{
+    if(userInput===allTextDat.split(":")[1])
+    {
+        alert(Login )
+    }
+    else
+    {
+
+    }
+}
+
+
+
+
+
+
+
+</script>
+<body>
+
+   
+
+    <input type="text" >
+
+    <input type="text" >
+
+    <input type="button"  value="login">
+
+    <input type="File" id="RegisterFile" >
+    
+</body>
+</html>
